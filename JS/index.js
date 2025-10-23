@@ -9,19 +9,11 @@ signUpArray=JSON.parse(localStorage.getItem('users'));
 }
 var sessionUsername=localStorage.getItem('sessionUsername');
 var welcomeElement=document.getElementById('username');
-var pathparts=location.pathname.split('/');
-var baseURL=pathparts.slice(0,pathparts.length-2).join('');
-if(baseURL!==''&&!baseURL.endsWith('/')){
-baseURL+='/';
-}
-if(baseURL===''){
-baseURL='/';
-}
 if(welcomeElement){
 if(sessionUsername){
 welcomeElement.innerHTML="Welcome "+sessionUsername;
 }else{
-window.location.href=baseURL+'index.html';
+window.location.href='../index.html';
 }
 }
 function isEmpty(){
@@ -115,7 +107,8 @@ if(signUpArray[i].email.toLowerCase()==enteredEmail.toLowerCase()&&signUpArray[i
 localStorage.setItem('sessionUsername',signUpArray[i].name);
 incorrectElement.innerHTML='';
 signinPassword.value='';
-location.replace(baseURL+'pages/welcome.html');
+// Using simple relative path, as login is called from index.html (root level)
+location.replace('./pages/welcome.html');
 foundUser=true;
 break;
 }
@@ -127,5 +120,6 @@ signinPassword.value='';
 }
 function logout(){
 localStorage.removeItem('sessionUsername');
-window.location.href=baseURL+'index.html';
+// Using simple relative path, as logout is called from pages/welcome.html
+window.location.href='../index.html';
 }
