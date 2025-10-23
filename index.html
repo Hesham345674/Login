@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Login</title>
+</head>
+
+<body class="bg-dark-blue">
+    <div class="container my-5 text-center ">
+        <!-- Replaced the 'form' div with the .auth-form-container for consistency with Sign Up styles -->
+        <div class="auth-form-container m-auto p-5 shadow-lg">
+            <h1 class="form-title">Smart Login System</h1>
+            <!-- ADDED: custom-input class -->
+            <input id="email" class="form-control custom-input my-3" placeholder="Enter your email" type="text">
+            <!-- ADDED: custom-input class -->
+            <input id="signinPassword" class="form-control custom-input my-3" placeholder="Enter your password"
+                type="password">
+            <p id="incorrect" class="text-danger"></p>
+            <button onclick="login()" class="btn custom-btn btn-outline-info w-100 my-3">Login</button>
+            <p class="text-white">Don't have an account? <a class="text-white" href="./pages/signup.html">Sign Up</a>
+            </p>
+        </div>
+    </div>
+
+
+
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.26.2/dist/sweetalert2.all.min.js
+"></script>
+
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>

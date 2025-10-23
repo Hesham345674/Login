@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../css/all.min.css">
+    <link rel="stylesheet" href="./../css/index.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="d-flex align-items-center justify-content-center vh-100 bg-dark-blue">
+        <div class="auth-form-container p-5 text-center">
+            <h2 class="form-title mb-4">Smart Login System</h2>
+            <div class="mb-3">
+                <input type="text" class="form-control custom-input" id="signupName" placeholder="Enter your name"
+                    required>
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control custom-input" id="signupEmail" placeholder="Enter your email"
+                    required>
+            </div>
+            <div class="mb-4">
+                <input type="password" class="form-control custom-input" id="signupPassword"
+                    placeholder="Enter password" required>
+            </div>
+            <button type="submit" onclick="signUp()" class="btn btn-outline-info custom-btn w-100 mb-3">Sign Up</button>
+            <p class="text-white-50 mt-3">You have an account? <a href="./../index.html"
+                    class="text-info text-decoration-none">Signin</a></p>
+            <!-- Ensure this element exists for displaying error/success messages -->
+            <p id="exist" class="text-center mt-3"></p>
+        </div>
+    </div>
+
+
+    <!-- SweetAlert2 Library (Required for pop-ups) -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.26.2/dist/sweetalert2.all.min.js"></script>
+
+    <script src="./../JS/bootstrap.bundle.min.js"></script>
+    <!-- FIX: Updated script source to point to the correct file name (script.js) and folder casing (js) -->
+    <script src="./../js/index.js"></script>
+</body>
+
+</html>

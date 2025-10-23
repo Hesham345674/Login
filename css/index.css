@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #24353f;
+}   
+.w-75{
+    width: 75 !important;
+}
+
+h1{
+    color: #17a2b8;
+}
+
+/* body {
+    background-color: #2c3e50; /* Darker blue background for the entire page 
+    color: #ffffff; /* Default text color 
+}*/
+
+.custom-navbar {
+    background-color: #2c3e50; /* Match body background */
+    border-bottom: 1px solid #34495e; /* Subtle separator */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.welcome-box {
+    background-color: #34495e; /* Slightly lighter dark blue for the box */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Softer, deeper shadow */
+    padding: 60px 100px; /* Adjust padding for size */
+    width: fit-content; /* Make the box fit content width */
+    max-width: 90%; /* Ensure responsiveness */
+}
+
+.welcome-text {
+    color: #4dc2f0; /* Light blue for "Welcome Hesham" */
+    font-size: 2.8rem; /* Larger font size */
+    font-weight: 600; /* Medium bold */
+    margin: 0; /* Remove default margin from h1 */
+}
+
+/* If you want a specific darker blue for the overall body background beyond Bootstrap's dark */
+.bg-dark-blue {
+    background-color: #2c3e50; /* Matches the body background */
+}
+
+
+
+.auth-form-container {
+    background-color: #34495e; /* Background for the form box */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    padding: 40px; /* Adjust padding as needed */
+    width: 100%;
+    max-width: 450px; /* Max width for the form container */
+}
+
+.form-title {
+    color: #4dc2f0; /* Light blue for "Smart Login System" */
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.custom-input.form-control {
+    background-color: #2c3e50; /* Darker background for input fields */
+    border: 1px solid #4dc2f0; /* Light blue border */
+    color: #ffffff; /* Text color inside input */
+    padding: 12px 15px;
+    height: auto; /* Override Bootstrap's default height if needed */
+}
+
+.custom-input.form-control::placeholder {
+    color: #a0a0a0; /* Placeholder text color */
+    opacity: 0.7; /* Make placeholder slightly transparent */
+}
+
+.custom-input.form-control:focus {
+    background-color: #2c3e50; /* Keep background dark on focus */
+    color: #ffffff;
+    border-color: #4dc2f0; /* Keep border color consistent */
+    box-shadow: 0 0 0 0.25rem rgba(77, 194, 240, 0.25); /* Light blue glow on focus */
+}
+
+.custom-btn.btn-outline-info {
+    color: #4dc2f0; /* Text color */
+    border-color: #4dc2f0; /* Border color */
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.custom-btn.btn-outline-info:hover {
+    background-color: #4dc2f0; /* Background on hover */
+    color: #2c3e50; /* Text color on hover */
+    border-color: #4dc2f0;
+}
