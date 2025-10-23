@@ -107,7 +107,6 @@ if(signUpArray[i].email.toLowerCase()==enteredEmail.toLowerCase()&&signUpArray[i
 localStorage.setItem('sessionUsername',signUpArray[i].name);
 incorrectElement.innerHTML='';
 signinPassword.value='';
-// Using simple relative path, as login is called from index.html (root level)
 location.replace('./pages/welcome.html');
 foundUser=true;
 break;
@@ -120,6 +119,5 @@ signinPassword.value='';
 }
 function logout(){
 localStorage.removeItem('sessionUsername');
-// Using simple relative path, as logout is called from pages/welcome.html
 window.location.href='../index.html';
 }
